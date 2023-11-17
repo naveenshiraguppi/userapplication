@@ -38,7 +38,7 @@ public final class UserController {
         final User existingUser = userRepository.findById(id).get();
         existingUser.setName(user.getName());
         existingUser.setEmail(user.getEmail());
-        return new ResponseEntity<>(userRepository.save(user), OK);
+        return new ResponseEntity<>(userRepository.save(existingUser), OK);
     }
 
     @DeleteMapping("/{id}")
