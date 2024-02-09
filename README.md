@@ -9,7 +9,7 @@ How to run
 2. Open terminal
 3. docker-compose build
 4. docker-compose up -d (detached mode)
-5. docker logs nishantdocker21.userapplication should show micro service logs
+5. docker logs naveendocker24.userapplication should show micro service logs
 
 How to test
 1. Open postman
@@ -26,3 +26,4 @@ curl --location 'http://localhost:8080/api/users' \
    curl --location 'http://localhost:8080/api/users/1'
 5. DELETE user by id
    curl --location --request DELETE 'http://localhost:8080/api/users/1'
+
